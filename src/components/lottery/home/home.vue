@@ -143,7 +143,6 @@ import { getCreateIssue, getCurrentStage, purchase, getAwardRecord } from "api/r
     
     },
     activated() {
-      this.addScript();
       /*if (!this.isInitData) {
         this.isPageData = false
       }
@@ -156,7 +155,6 @@ import { getCreateIssue, getCurrentStage, purchase, getAwardRecord } from "api/r
       // console.log(3333 + '---->beforeMount')
     },
     mounted() {
-      this.addScript();
       // console.log(4444 + '---->mounted')
       if (this.$refs.MyLoading) {
         this.$refs.MyLoading.progressComplete()
@@ -188,12 +186,6 @@ import { getCreateIssue, getCurrentStage, purchase, getAwardRecord } from "api/r
       },
     },
     methods: {
-      addScript() {
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "./static/js/lottery.js";
-        document.body.appendChild(script);
-      },
       //页面数据初始化
       pageDataInit() {
         if (!this.isInitData) {
