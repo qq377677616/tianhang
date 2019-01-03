@@ -141,6 +141,7 @@ import { getCreateIssue, getCurrentStage, purchase, getAwardRecord } from "api/r
     },
     created() {  
       console.log(377677616)
+      console.log(377677616)
     },
     activated() {
       /*if (!this.isInitData) {
